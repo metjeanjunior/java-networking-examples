@@ -16,5 +16,6 @@
 	  packet = new DatagramPacket(sbuf, sbuf.length, address, port);
 	  serverSocket.send(packet);
 	  break;
- }```
-  and on the client side the simplest thing is to add a `try-catch` and sanitize your input in case `keyboard.readLine().compareTo("exit") == 0` because `number = Integer.parseInt(keyboard.readLine());` will definitely scream at you.
+ }
+ ```
+ and on the client side the simplest thing is to add a `try-catch` and sanitize your input in case `keyboard.readLine().compareTo("exit") == 0` because `number = Integer.parseInt(keyboard.readLine());` will definitely scream at you.
