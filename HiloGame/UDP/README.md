@@ -1,5 +1,7 @@
 ### This is a simple high low game between a server and a client
 
+* It uses UDP as its underlying protocol. Here is a [TCP](../TCP) version doing the same thing.
+
 * if no host address (IP) is provided, we assume localhost
 
 * I used port 5060 because why not...
@@ -18,4 +20,4 @@
 	  break;
  }
  ```
- and on the client side the simplest thing is to add a `try-catch` and sanitize your input in case `keyboard.readLine().compareTo("exit") == 0` because `number = Integer.parseInt(keyboard.readLine());` will definitely scream at you.
+ and on the client side the simplest thing is to add a `try-catch` as demonstrated [here](../TCP/HiloClient.java) to  sanitize your input in case `keyboard.readLine().compareTo("exit") == 0` because `number = Integer.parseInt(keyboard.readLine());` will definitely scream at you.
