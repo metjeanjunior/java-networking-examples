@@ -6,3 +6,5 @@
 
 
 * This is simple. Yes I ought to thread this so that I could support multiple games at once. This is not implemented purposely.
+
+* This passes a Serializable object back and forth. A protocol using string can be found [here](../UDP/)

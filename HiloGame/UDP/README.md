@@ -8,6 +8,8 @@
 
 * This is simple. Yes I ought to thread this so that I could support multiple games at once. This is not implemented purposely.
 
+* This uses strings as a means of communication between client and server. A protocol using Serializable objects can be found [here](../TCP/)
+
 * An exit command for the client would be nice but nope, you can't leave till you're right.
  * If you really wanted that, add something similar to these lines on the server side:
   ```java
